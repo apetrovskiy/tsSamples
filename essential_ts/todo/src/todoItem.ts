@@ -1,4 +1,5 @@
 export class TodoItem {
+    /*
     public id: number;
     public task: string;
     public complete: boolean = false;
@@ -10,6 +11,14 @@ export class TodoItem {
     }
 
     public printDetails(): void {
+        console.log(`${this.id}\t${this.task} ${this.complete ? "\t(complete" : ""}`);
+    }
+    */
+    public constructor(public id: number, public task: string, public complete: boolean = false) {
+        // no statements required
+    }
+
+    printDetails(): void {
         console.log(`${this.id}\t${this.task} ${this.complete ? "\t(complete" : ""}`);
     }
 }
