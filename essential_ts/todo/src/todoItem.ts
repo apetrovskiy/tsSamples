@@ -4,12 +4,9 @@ export class TodoItem {
     public complete: boolean = false;
 
     public constructor(id: number, task: string, complete: boolean = false) {
-        // no statements required
-        /*
         this.id = id;
         this.task = task;
         this.complete = complete;
-        */
     }
 
     public printDetails(): void {
